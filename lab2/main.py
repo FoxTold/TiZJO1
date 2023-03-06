@@ -3,6 +3,9 @@ import re
 import sys
 
 def my_printf(format_string,param):
+    if format_string == "" or param == "":
+        print("")
+        return
     znalazlem = re.search("#(\.\d+)?k", format_string)
     if not znalazlem:
         print(format_string)
@@ -12,7 +15,6 @@ def my_printf(format_string,param):
     if znalazlem.group(1):
         length = int(znalazlem.group(1)[1:])
     print(format_string.replace(zamiana, param.swapcase()[:min(len(param),length)]))
-
 
 data=sys.stdin.readlines()
 

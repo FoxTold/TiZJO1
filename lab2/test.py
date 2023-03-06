@@ -2,6 +2,9 @@ import sys
 import re
 
 def my_printf(format_string,param):
+    if format_string == "":
+        print("")
+        return
     znalazlem = re.search("#(\.\d+)?k", format_string)
     if not znalazlem:
         print(format_string)
@@ -12,4 +15,4 @@ def my_printf(format_string,param):
         length = int(znalazlem.group(1)[1:])
     print(format_string.replace(zamiana, param.swapcase()[:min(len(param),length)]))
 
-my_printf("A12132 ##k##","co")
+my_printf("#,2s","sprawdzmy")
