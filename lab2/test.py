@@ -1,20 +1,15 @@
-#!/usr/bin/env python3
-
 import sys
+import re
 
 def my_printf(format_string,param):
-    #print(format_string)
-    shouldDo=True
-    for idx in range(0,len(format_string)):
-        if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+3]=='k':
-                length = int(format_string[2])
-                print(param.swapcase()[:length],end="")
-                shouldDo=False
-            else:
-                print(format_string[idx-3],end="")
-        else:
-            shouldDo=True
-    print("")
+    znalazlem = re.search("#(\.\d+)?k", format_string)
+    if not znalazlem:
+        print(format_string)
+        return
+    zamiana = format_string[znalazlem.start():znalazlem.end()]
+    length = len(param)
+    if znalazlem.group(1):
+        length = int(znalazlem.group(1)[1:])
+    print(format_string.replace(zamiana, param.swapcase()[:min(len(param),length)]))
 
-my_printf("#.2k","asd")
+my_printf("szybki test #10s","caly")
