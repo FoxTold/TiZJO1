@@ -14,7 +14,8 @@ def my_printf(format_string,param):
     length = len(param)
     if znalazlem.group(1):
         length = int(znalazlem.group(1)[1:])
-    print(format_string.replace(zamiana, param.swapcase()[:min(len(param),length)]))
+    do_wypisania = format_string.replace(zamiana, param.swapcase()[:min(len(param),length)])
+    print(do_wypisania)
 
 data=sys.stdin.readlines()
 

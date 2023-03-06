@@ -14,3 +14,7 @@ asd
 AAA
 #,2s
 sprawdzmy
+nie zadziala #.0s
+polska
+a teraz #..10k
+test

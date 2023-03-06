@@ -15,4 +15,4 @@ def my_printf(format_string,param):
         length = int(znalazlem.group(1)[1:])
     print(format_string.replace(zamiana, param.swapcase()[:min(len(param),length)]))
 
-my_printf("#,2s","sprawdzmy")
+my_printf("a teraz #..10k","test")
