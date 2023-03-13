@@ -6,13 +6,13 @@ tutaj pelen test #10.2k
 full
 tutaj przytniemy #.2k i wynik jest
 tnieMY
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
+tutaj rozszerzymy #10k i wynik jest taki
 test5
-gjjkdsljflds #k jdlkfjdslf
+tutaj najpierw przytniemy a potem rozszerzymy #10.1k
 test6
-fjdslkfjdl #k tttttt
+tutaj misterny test czy wyprintuje naturalnie
 test7
-fjdlsjfkl #k oooolll
+# k # k# #,k #1,1k #2--k #2s %2s #1.k
 test8
 rwrewrew #k fjdslkjfdl
 test9
