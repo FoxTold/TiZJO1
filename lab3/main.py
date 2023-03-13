@@ -3,7 +3,7 @@
 import sys
 import re
 def my_printf(format_string,param):
-    if format_string == "" or param == "":
+    if format_string == "":
         print("")
         return
 
