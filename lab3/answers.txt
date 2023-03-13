@@ -1,7 +1,7 @@
 to powinno zlapac TAK
 to juz nie # k
-tutaj pelen test       FULL
-fjdfsfds # k alal
+tutaj pelen test         FU
+tutaj przytniemy TN i wynik jest
 djfjkldsjf TEST5 jjjjjj fsfjdljfdlsj flj ldfj
 gjjkdsljflds TEST6 jdlkfjdslf
 fjdslkfjdl TEST7 tttttt
@@ -9,3 +9,4 @@ fjdlsjfkl TEST8 oooolll
 rwrewrew TEST9 fjdslkjfdl
 fjdlskjfldjflj TEST10 rewrewrew
 asdasd
+
