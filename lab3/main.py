@@ -15,13 +15,13 @@ def my_printf(format_string,param):
     replacement = znalazlem.group(0)
     zamiana = format_string[znalazlem.start():znalazlem.end()]
     param = param.swapcase()
-    length = len(param)
-    lengthMax = len(param)
-    if znalazlem.group(2):
-        length = int(znalazlem.group(2)[1:])
-    if znalazlem.group(1):
-        lengthMax = int(znalazlem.group(1))
-        param = " " * max(0, int(lengthMax) - len(param)) + param
+    maxlen =  znalazlem.group(2)
+    minlen = znalazlem.group(1)
+
+    if maxlen:
+        param = param[:int(maxlen[1:])]
+    if minlen:
+        param = " " * max(0, int(minlen) - len(param)) + param
     print(format_string.replace(replacement, param))
 
 data=sys.stdin.readlines()
