@@ -7,7 +7,7 @@ def my_printf(format_string, param):
     flag = False
     if number < 0:
         flag = True
-        number *=-1
+        number *= -1
     param = str(number)[::-1]
     if flag:
         number = int(param)*-1
