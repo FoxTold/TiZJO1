@@ -16,3 +16,5 @@ szybki test #g
 -1000
 to co teraz sie zadzieje #g
 101
+#dupa co sie zadzieje #dupe
+1
