@@ -12,3 +12,7 @@ ala ma #g jablek
 51
 szybki test #g
 -01
+szybki test #g
+-1000
+to co teraz sie zadzieje #g
+101

@@ -5,3 +5,5 @@
 #d test #d
 ala ma 15 jablek
 szybki test -1
+szybki test -1
+to co teraz sie zadzieje 101
