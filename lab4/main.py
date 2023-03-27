@@ -3,7 +3,17 @@
 import sys
 
 def my_printf(format_string, param):
-    print(format_string.replace('#g', param.swapcase()))
+    number = int(param)
+    flag = False
+    if number < 0:
+        flag = True
+        number *=-1
+    param = str(number)[::-1]
+    if flag:
+        number = int(param)*-1
+        param = str(number)
+
+    print(format_string.replace('#g', str(int(param))))
 
 data = sys.stdin.readlines()
 
