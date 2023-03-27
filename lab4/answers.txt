@@ -4,3 +4,4 @@
 # g #.g #,g
 #d test #d
 ala ma 15 jablek
+szybki test -1
