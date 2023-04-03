@@ -4,3 +4,7 @@ zobaczmy co sie stanie teraz #g
 1234
 #10g
 000
+#4.g
+11222222
+#12g
+-100

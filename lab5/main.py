@@ -13,6 +13,10 @@ def my_printf(format_string,param):
         print(format_string)
         return
     result = ""
+    isNegative = False
+    if int(param) < 0:
+        param = str(int(param)*-1)
+        isNegative = True
     for a in param:
         letter = int(a)-1
         if letter < 0:
@@ -21,7 +25,8 @@ def my_printf(format_string,param):
     param = result
     replacement = znalazlem.group(0)
     minlen = znalazlem.group(1)
-
+    if isNegative:
+        param = "-" + param
     if minlen:
         param = " " * max(0, int(minlen) - len(param)) + param
     print(format_string.replace(replacement, param))
