@@ -16,7 +16,11 @@ print(#21g)
 1120020
 
 
-przetestujmy #g
+przetestujmy #40g
 0011223344556677889900
-przetestujmy #g
+przetestujmy #35g
 1122334455667788990011
+przetestujmy #40g
+-0011223344556677889900
+przetestujmy #35g
+-1122334455667788990011
