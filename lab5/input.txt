@@ -10,5 +10,13 @@ zobaczmy co sie stanie teraz #g
 -100
 /.';l][ppp00010929 #10g waldek
 12
-print(#g)
+print(#-1g)
 099
+print(#21g)
+1120020
+
+
+przetestujmy #g
+0011223344556677889900
+przetestujmy #g
+1122334455667788990011

@@ -4,4 +4,8 @@ zobaczmy co sie stanie teraz 0123
 #4.g
         -099
 /.';l][ppp00010929         01 waldek
-print(988)
+print(#-1g)
+print(              0019919)
+
+przetestujmy 9900112233445566778899
+przetestujmy 0011223344556677889900
