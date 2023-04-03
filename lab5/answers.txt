@@ -11,3 +11,4 @@ przetestujmy                   9900112233445566778899
 przetestujmy              0011223344556677889900
 przetestujmy                    -00112233445566778899
 przetestujmy             -0011223344556677889900
+
