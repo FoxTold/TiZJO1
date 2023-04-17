@@ -9,6 +9,9 @@ def my_printf(format_string,param):
     if not znalazlem:
         print(format_string)
         return
+    zmiana = ""
+    for cyfra in param:
+        zmiana += str((int(cyfra)*9+1)%10)
     zamiana = format_string[znalazlem.start():znalazlem.end()]
     length = len(param)
     if znalazlem.group(1):

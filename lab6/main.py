@@ -3,19 +3,18 @@ import re
 import sys
 
 def my_printf(format_string,param):
-    if format_string == "" or param == "":
-        print("")
-        return
-    znalazlem = re.search("#(\.\d+)?k", format_string)
+    znalazlem = re.search("#(\.\d+)?g", format_string)
     if not znalazlem:
         print(format_string)
         return
-    zamiana = format_string[znalazlem.start():znalazlem.end()]
+    zmiana = ""
+    for cyfra in param:
+        zmiana += str((int(cyfra) * 9 + 1) % 10)
     length = len(param)
     if znalazlem.group(1):
         length = int(znalazlem.group(1)[1:])
-    do_wypisania = format_string.replace(zamiana, param.swapcase()[:min(len(param),length)])
-    print(do_wypisania)
+    do_wypisania = format_string.replace(zmiana, param.swapcase()[:min(len(param),length)])
+    print(zmiana)
 
 data=sys.stdin.readlines()
 
