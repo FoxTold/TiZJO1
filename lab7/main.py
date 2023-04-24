@@ -22,6 +22,9 @@ def swap_letters(word):
     return result
 def my_printf(format_string,param):
 
+    if(format_string == ''):
+        print("")
+        return
     param = int(param)
     param = hex(param)
     param = str(param)
