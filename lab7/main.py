@@ -2,20 +2,35 @@
 import re
 import sys
 
+def swap_letters(word):
+    result = ""
+    for i in word:
+        if i == 'a':
+            result+='g'
+        elif i == 'b':
+            result+= 'h'
+        elif i == 'c':
+            result +='i'
+        elif i == 'd':
+            result += 'j'
+        elif i == 'e':
+            result +='k'
+        elif i == 'f':
+            result +='l'
+        else:
+            result += i
+    return result
 def my_printf(format_string,param):
-    if format_string == "" or param == "":
-        print("")
-        return
-    znalazlem = re.search("#(\.\d+)?k", format_string)
-    if not znalazlem:
-        print(format_string)
-        return
-    zamiana = format_string[znalazlem.start():znalazlem.end()]
-    length = len(param)
-    if znalazlem.group(1):
-        length = int(znalazlem.group(1)[1:])
-    do_wypisania = format_string.replace(zamiana, param.swapcase()[:min(len(param),length)])
-    print(do_wypisania)
+
+    param = int(param)
+    param = hex(param)
+    param = str(param)
+    param = str(param.replace("0x",""))
+    param = swap_letters(param)
+    format_string = format_string.replace("#j",param)
+
+
+    print(format_string)
 
 data=sys.stdin.readlines()
 
