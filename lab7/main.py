@@ -28,8 +28,6 @@ def my_printf(format_string,param):
     param = str(param.replace("0x",""))
     param = swap_letters(param)
     format_string = format_string.replace("#j",param)
-
-
     print(format_string)
 
 data=sys.stdin.readlines()
