@@ -17,6 +17,8 @@ def swap_letters(word):
             result +='k'
         elif i == 'f':
             result +='l'
+        elif i=='0':
+            result+='o'
         else:
             result += i
     return result
