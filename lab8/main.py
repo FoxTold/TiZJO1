@@ -36,7 +36,7 @@ def my_printf(format_string,param):
     replace_with = swap_letters(replace_with)
 
     print(format_string.replace(replace, replace_with))
-    print(format_string)
+
 
 data=sys.stdin.readlines()
 

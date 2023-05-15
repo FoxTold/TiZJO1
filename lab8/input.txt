@@ -1,20 +1,22 @@
-tomek #j kox
+#.3j
+2
+.#.10j.
+20
+.#.10j.
 12
-a co bedzie teraz #j
-0112
-to szybki test teraz #j
--4294967295
-to rzucmy okiem co teraz sie zadzieje #j
+.#.10j.
+2735
+.#.10j.
+89073456
+.#.10j.
+123312
+.#.5j.
 11259375
-a teraz to co tygryski lubia najbardziej #j
-244837814099629
-a teraz przetestujemy cos takiego #j
-28772997619311
-a teraz to co tygryski lubia najbardziej ale ujemne #j
--244837814099629
-a teraz przetestujemy cos takiego ale ujemne #j
--28772997619311
-
-
-a tearz cos takiego
-12
+.#.5j.
+55112
+.#.16j.
+55112
+.#.5j
+-55112
+.#.16j
+-551121111111111
