@@ -21,16 +21,21 @@ def swap_letters(word):
             result += i
     return result
 def my_printf(format_string,param):
-
-    if(format_string == ''):
-        print("")
+    match = re.search("#\.(\d+)j", format_string)
+    if not match:
+        print(format_string)
         return
-    param = int(param)
-    param = hex(param)
-    param = str(param)
-    param = str(param.replace("0x",""))
-    param = swap_letters(param)
-    format_string = format_string.replace("#j",param)
+
+    replace = match.group(0)
+    min_length = match.group(1)
+
+    replace_with = str(hex(int(param)))
+    replace_with = replace_with.replace('0x', '')
+    replace_with = max(0, len(replace_with) - int(min_length)) * "0" + replace_with
+
+    replace_with = swap_letters(replace_with)
+
+    print(format_string.replace(replace, replace_with))
     print(format_string)
 
 data=sys.stdin.readlines()

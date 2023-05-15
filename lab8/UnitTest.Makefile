@@ -75,7 +75,7 @@ generate:
 	$(call backup_data)
 
 	# generate_output,INPUT_FILE_NAME_WOUT_EXTENSION
-	
+
 	$(call generate_answers,noparam)
 	$(call generate_answers,short)
 	$(call generate_answers,long)
