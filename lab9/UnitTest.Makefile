@@ -87,7 +87,7 @@ merge:
 	-rm ./input.txt 2>/dev/null
 	-rm ./answers.txt 2>/dev/null
 
-	$(call merge_test,noparam)
-	$(call merge_test,short)
-	$(call merge_test,long)
-	$(call merge_test,bad)
+	$(call merge_test,bignums)
+	$(call merge_test,float)
+	$(call merge_test,int)
+	$(call merge_test,test)

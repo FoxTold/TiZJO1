@@ -53,7 +53,7 @@ def my_printf(format_string,param):
     if min_length>len(fractal):
         fractal = fractal + ("0"*(min_length-len(fractal)))
     elif min_length<len(fractal):
-        fractal =  fractal[:len(fractal)-min_length]
+        fractal =  fractal[:min_length]
 
 
     replace_with = decimal + "." + fractal
