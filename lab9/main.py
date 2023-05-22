@@ -47,11 +47,14 @@ def my_printf(format_string,param):
     if len(num) == 2:
         decimal = swap_decimal(num[0])
         fractal = swap_fractal(num[1])
-        
+    else:
+        decimal = swap_decimal(num[0])
+        fractal = ""
     if min_length>len(fractal):
         fractal = fractal + ("0"*(min_length-len(fractal)))
     elif min_length<len(fractal):
         fractal =  fractal[:len(fractal)-min_length]
+
 
     replace_with = decimal + "." + fractal
 

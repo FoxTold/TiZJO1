@@ -64,10 +64,10 @@ endef
 	
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 	
-	$(call perform_test,noparam,"No param")
-	$(call perform_test,short,Short)
-	$(call perform_test,long,Long)
-	$(call perform_test,bad,Bad)
+	$(call perform_test,bignums,"Bignums")
+	$(call perform_test,float,"Float")
+	$(call perform_test,int,"int")
+	$(call perform_test,test,"Test")
 
 	$(call restore_data)
 
@@ -76,10 +76,10 @@ generate:
 
 	# generate_output,INPUT_FILE_NAME_WOUT_EXTENSION
 	
-	$(call generate_answers,noparam)
-	$(call generate_answers,short)
-	$(call generate_answers,long)
-	$(call generate_answers,bad)
+	$(call generate_answers,bignums)
+	$(call generate_answers,float)
+	$(call generate_answers,int)
+	$(call generate_answers,test)
 
 	$(call restore_data)
 
