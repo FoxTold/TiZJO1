@@ -2,40 +2,58 @@
 import re
 import sys
 
-def swap_letters(word):
+def swap_decimal(word):
     result = ""
     for i in word:
-        if i == 'a':
+        if i == '0':
+            result+='a'
+        elif i == '1':
+            result+= 'b'
+        elif i == '2':
+            result +='c'
+        elif i == '3':
+            result += 'd'
+        elif i == '4':
+            result +='e'
+        elif i == '5':
+            result +='f'
+        elif i=='6':
             result+='g'
-        elif i == 'b':
-            result+= 'h'
-        elif i == 'c':
-            result +='i'
-        elif i == 'd':
-            result += 'j'
-        elif i == 'e':
-            result +='k'
-        elif i == 'f':
-            result +='l'
-        elif i=='0':
-            result+='o'
-        else:
-            result += i
+        elif i=='7':
+            result+='h'
+        elif i=='8':
+            result+='i'
+        elif i=='9':
+            result+='j'
+    return result
+
+def swap_fractal(word):
+    result = ""
+    for i in word:
+        num = int(i)
+        new_num = (num+5)%10
+        result+= str(new_num)
     return result
 def my_printf(format_string,param):
-    match = re.search("#\.(\d+)j", format_string)
+    match = re.search("#\.(\d+)h", format_string)
     if not match:
         print(format_string)
         return
 
     replace = match.group(0)
-    min_length = match.group(1)
+    min_length = int(match.group(1))
 
-    replace_with = str(hex(int(param)))
-    replace_with = replace_with.replace('0x', '')
-    replace_with = max(0, len(replace_with) - int(min_length)) * "0" + replace_with
+    num = param.split(".")
+    if len(num) == 2:
+        decimal = swap_decimal(num[0])
+        fractal = swap_fractal(num[1])
+        
+    if min_length>len(fractal):
+        fractal = fractal + ("0"*(min_length-len(fractal)))
+    elif min_length<len(fractal):
+        fractal =  fractal[:len(fractal)-min_length]
 
-    replace_with = swap_letters(replace_with)
+    replace_with = decimal + "." + fractal
 
     print(format_string.replace(replace, replace_with))
 
