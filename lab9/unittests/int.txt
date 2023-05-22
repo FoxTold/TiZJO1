@@ -1,2 +1,14 @@
-totafsdfsf b.5000000000 fdsfsdf
-totafsdfsf b.0000000000 fdsfsdf
+#.1h
+2
+#.2h
+1
+#.10h
+3
+#.1h
+22
+#.12h
+331
+#.5h
+23332112
+#.10h
+233321

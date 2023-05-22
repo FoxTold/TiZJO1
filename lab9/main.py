@@ -56,7 +56,7 @@ def my_printf(format_string,param):
         fractal =  fractal[:min_length]
 
 
-    replace_with = decimal + "." + fractal
+    replace_with = decimal + ("." if min_length > 0 else "") + fractal
 
     print(format_string.replace(replace, replace_with))
 
