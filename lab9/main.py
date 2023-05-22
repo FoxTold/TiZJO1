@@ -39,7 +39,7 @@ def my_printf(format_string,param):
     if not match:
         print(format_string)
         return
-    #komentarz
+    #komentarz drugi
     replace = match.group(0)
     min_length = int(match.group(1))
 
