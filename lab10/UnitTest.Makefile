@@ -64,10 +64,11 @@ endef
 	
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 	
-	$(call perform_test,bignums,"Bignums")
-	$(call perform_test,float,"Float")
-	$(call perform_test,int,"int")
-	$(call perform_test,test,"Test")
+	$(call perform_test,sample,"Main doesn't throw error")
+	$(call perform_test,hex,"Hex")
+	$(call perform_test,minus_hex,"Minus Hex")
+	$(call perform_test,dec,"Dec")
+	$(call perform_test,no_input,"No input")
 
 	$(call restore_data)
 
@@ -76,10 +77,11 @@ generate:
 
 	# generate_output,INPUT_FILE_NAME_WOUT_EXTENSION
 	
-	$(call generate_answers,bignums)
-	$(call generate_answers,float)
-	$(call generate_answers,int)
-	$(call generate_answers,test)
+	$(call generate_answers,sample)
+	$(call generate_answers,hex)
+	$(call generate_answers,dec)
+	$(call generate_answers,minus_hex)
+	$(call generate_answers,no_input)
 
 	$(call restore_data)
 
@@ -87,7 +89,8 @@ merge:
 	-rm ./input.txt 2>/dev/null
 	-rm ./answers.txt 2>/dev/null
 
-	$(call merge_test,bignums)
-	$(call merge_test,float)
-	$(call merge_test,int)
-	$(call merge_test,test)
+	$(call merge_test,sample)
+	$(call merge_test,hex)
+	$(call merge_test,dec)
+	$(call merge_test,minus_hex)
+	$(call merge_test,no_input)
