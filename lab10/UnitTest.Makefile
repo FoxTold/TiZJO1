@@ -64,11 +64,10 @@ endef
 	
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 	
-	$(call perform_test,sample,"Main doesn't throw error")
+	$(call perform_test,sample,"test")
 	$(call perform_test,hex,"Hex")
-	$(call perform_test,minus_hex,"Minus Hex")
 	$(call perform_test,dec,"Dec")
-	$(call perform_test,no_input,"No input")
+	$(call perform_test,input,"No input")
 
 	$(call restore_data)
 
@@ -80,8 +79,7 @@ generate:
 	$(call generate_answers,sample)
 	$(call generate_answers,hex)
 	$(call generate_answers,dec)
-	$(call generate_answers,minus_hex)
-	$(call generate_answers,no_input)
+	$(call generate_answers,input)
 
 	$(call restore_data)
 
@@ -92,5 +90,4 @@ merge:
 	$(call merge_test,sample)
 	$(call merge_test,hex)
 	$(call merge_test,dec)
-	$(call merge_test,minus_hex)
-	$(call merge_test,no_input)
+	$(call merge_test,input)
