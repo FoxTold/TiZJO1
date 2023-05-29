@@ -40016,6 +40016,5 @@ Witaj swiecie!
 -9996
 #a
 -9997
-
 Witaj swiecie!
 2
